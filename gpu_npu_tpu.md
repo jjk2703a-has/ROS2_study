@@ -26,6 +26,7 @@ GPU NPU TPU의 차이
 
 
 3. TPU (Tensor Processing Unit)
+   
    구글(Google)이 자사의 딥러닝 프레임워크(TensorFlow, JAX 등) 및 대규모 AI 연산을 가속하기 위해 자체 개발한 텐서 연산 전용 프로세서입니다.
    
    시스톨릭 배열(Systolic Array) 구조를 채택하여 데이터가 칩 내부 연산기들을 연쇄적으로 통과하게 만들어 메모리 접근 병목 현상을 대폭 줄였습니다.
