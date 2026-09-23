@@ -1,6 +1,6 @@
-GPU NPU TPU의 차이
+## GPU NPU TPU의 차이
 
-1. GPU(Graphic Processing Unit)
+## 1. GPU(Graphic Processing Unit)
    그래픽 작업과 병렬 처리에 특화되어 있습니다.
 
    많은 수의 작은 코어들로 구성되어 있으며, SIMD (Single Instruction, Multiple Data) 아키텍처를 기반으로 합니다.
@@ -14,7 +14,7 @@ GPU NPU TPU의 차이
    성숙한 소프트웨어 생태계(NVIDIA CUDA 등)와 뛰어난 범용성을 가졌으나, 전력 소비와 발열 부담이 큽니다
 
 
-2. NPU (Neural Processing Unit)
+## 2. NPU (Neural Processing Unit)
    
    인간의 뇌 신경망 작동 방식을 모방하여 인공지능 연산(딥러닝)만을 전담 처리하도록 설계된 특화 프로세서입니다.
 
@@ -25,7 +25,7 @@ GPU NPU TPU의 차이
    저전력·저지연 환경에서 실시간 AI 기능을 구동하는 데 최적화되어 있지만, 범용성이 낮고 대규모 학습 작업에는 적합하지 않습니다.
 
 
-3. TPU (Tensor Processing Unit)
+## 3. TPU (Tensor Processing Unit)
    
    구글(Google)이 자사의 딥러닝 프레임워크(TensorFlow, JAX 등) 및 대규모 AI 연산을 가속하기 위해 자체 개발한 텐서 연산 전용 프로세서입니다.
    
