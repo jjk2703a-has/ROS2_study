@@ -1,5 +1,17 @@
 # PWM(Pulse Width Modulation) 정리
 
+## PWM이란?
+
+Pulse : 사각파
+
+Width : 폭
+
+Modulation : 변조
+
+사각파의 폭을 제어한다는 의미
+
+<img width="434" height="109" alt="image" src="https://github.com/user-attachments/assets/193393b6-379d-4f62-ae54-a6d3be656029" />
+
 ## PWM 사용 이유
 
 마이크로프로세서는 기본적으로 디지털 방식으로 연산하고 출력
@@ -12,22 +24,11 @@
 
 그런데 LED의 밝기나 모터의 속도처럼 출력의 크기를 조절해야 하는 경우가 있다.
 
-그렇다면 디지털 신호인 0과 1을 빠르게 반복하여 평균을 통해 전압을 조절 한다.
+해결방법: 디지털 신호인 0과 1을 빠르게 반복하여 평균을 통해 전압을 조절 한다.
 
-**=>PWM은 디지털 신호를 이용해서 아날로그적인 효과를 만들어내는 방법**
+**→PWM은 디지털 신호를 이용해서 아날로그적인 효과를 만들어내는 방법**
 
 
-## PWM이란?
-
-Pulse : 사각파
-
-Width : 폭
-
-Modulation : 변조
-
-사각파의 폭을 제어한다는 의미
-
-<img width="434" height="109" alt="image" src="https://github.com/user-attachments/assets/193393b6-379d-4f62-ae54-a6d3be656029" />
 
 ## Duty Cycle [%]
 
@@ -49,7 +50,8 @@ Modulation : 변조
 **LED 밝기 제어**
 
 
-<img width="564" height="282" alt="image" src="https://github.com/user-attachments/assets/a385938c-4933-4307-a634-03a7ca82726b" />
+<img width="495" height="287" alt="image" src="https://github.com/user-attachments/assets/195262df-8fe1-47ac-a7f3-2e7f21357b96" />
+
 
 
 Duty ↑ → LED가 켜져 있는 시간이 증가 → 더 밝게 보임 
@@ -69,25 +71,27 @@ Duty ↑ → 모터에 전달되는 평균적인 에너지 ↑ → 속도 ↑
 
 Duty ↓ → 전달되는 에너지 ↓ → 속도 ↓
 
-## Duty Cycle과 주파수, 주기
+
+## 주기와 주파수
 
 
-**Duty Cycle**
-→ 한 주기에서 신호가 ON(HIGH) 상태로 유지되는 비율
 
+
+**Period(주기)**
+→ 신호가 한 번 반복되는 데 걸리는 시간
 
 **Frequency(주파수)**
 → 신호의 주기가 1초에 몇 번 반복되는지를 나타내는 값
 
 
-**Period(주기)**
-→ 신호가 한 번 반복되는 데 걸리는 시간
 
 $$
 f=\frac{1}{T}
 $$
 
 주기가 짧아질수록 → 주파수는 높아짐
+
+
 주기가 길어질수록 → 주파수는 낮아짐
 
 
