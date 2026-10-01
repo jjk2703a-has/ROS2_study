@@ -1,16 +1,5 @@
 # PWM(Pulse Width Modulation) 정리
 
-## PWM이란?
-
-Pulse : 사각파
-
-Width : 폭
-
-Modulation : 변조
-
-사각파의 폭을 제어한다는 의미
-
-<img width="434" height="109" alt="image" src="https://github.com/user-attachments/assets/193393b6-379d-4f62-ae54-a6d3be656029" />
 
 ## PWM 사용 이유
 
@@ -28,6 +17,17 @@ Modulation : 변조
 
 **⇒PWM은 디지털 신호를 ON/OFF 비율(듀티비)을 조절하여 아날로그적인 효과를 만들어내는 방법이다.**
 
+## PWM이란?
+
+Pulse : 사각파
+
+Width : 폭
+
+Modulation : 변조
+
+사각파의 폭을 제어한다는 의미
+
+<img width="434" height="109" alt="image" src="https://github.com/user-attachments/assets/193393b6-379d-4f62-ae54-a6d3be656029" />
 
 
 ## Duty Cycle (듀티비) [%]
