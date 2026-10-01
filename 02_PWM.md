@@ -51,7 +51,7 @@ $$\text{Duty Cycle} = \frac{\text{ON 시간}}{\text{전체 주기}} \times 100(\
 
 
 
-BOTTOM에서 TOP까지 카운트를 진행하는 상향 카운트만 존재: 단일 경사 모드
+BOTTOM에서 TOP까지 카운트를 진행하는 상향 카운트만 존재: 단일 경사 모드 (Single Slope Mode)
 
   – 카운트 값이 BOTTOM일 때 파형 출력 핀으로 HIGH 출력 (비반전)
 
