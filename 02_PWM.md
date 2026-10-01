@@ -34,8 +34,7 @@ Modulation : 변조
 
 한 주기 안에서 신호가 on 되어 있는 비율
 
-$$\text{Duty Cycle} = \frac{\text{ON 시간}}{\text{전체 주기}} \times 100(%)  $$
-
+$$\text{Duty Cycle} = \frac{\text{ON 시간}}{\text{전체 주기}} \times 100(\\%)$$
 
 - 0% : 항상 OFF
 - 50% : 절반 ON
