@@ -26,7 +26,7 @@ Modulation : 변조
 
 해결방법: 디지털 신호인 0과 1을 빠르게 반복하여 평균을 통해 전압을 조절 한다.
 
-**→PWM은 디지털 신호를 이용해서 아날로그적인 효과를 만들어내는 방법**
+**⇒PWM은 디지털 신호를 이용해서 아날로그적인 효과를 만들어내는 방법**
 
 
 
@@ -43,6 +43,33 @@ Modulation : 변조
 
 
 <img width="398" height="484" alt="image" src="https://github.com/user-attachments/assets/9d93cda0-efb1-4987-b73d-e6e48630c6be" />
+
+
+## FAST PWM
+
+
+<img width="548" height="230" alt="image" src="https://github.com/user-attachments/assets/38b702e2-897b-4169-9f9a-6d56f5469e20" />
+
+
+
+BOTTOM에서 TOP까지 카운트를 진행하는 상향 카운트만 존재: 단일 경사 모드
+
+  – 카운트 값이 BOTTOM일 때 파형 출력 핀으로 HIGH 출력 (비반전)
+
+  – 비교 일치가 발생하면 파형 출력 핀으로 LOW 출력 (비반전)
+
+  – 비교 일치 값 조정에 의해 듀티 사이클 조정
+
+
+## Phase Correct PWM
+
+<img width="592" height="263" alt="image" src="https://github.com/user-attachments/assets/926c9e5e-adc2-45cf-abf8-7419ab609052" />
+
+BOTTOM에서 TOP까지 상향카운트 후 TOP에서 BOTTOM으로 하향 카운트: 이중 경사 모드 (Dual Slope Mode)
+  
+  – 상향 카운트에서 비교 일치가 발생하면 파형 출력 핀으로 LOW 출력(비반전)
+  
+  – 하향 카운트에서 비교 일치가 발생하면 파형 출력 핀으로 HIGH 출력(비반전)
 
 
 ## PWM 활용
@@ -66,6 +93,10 @@ PWM 주파수가 충분히 높으면 사람이 LED의 ON/OFF를 하나씩 구분
 
 **모터 속도 제어**
 
+<img width="598" height="199" alt="image" src="https://github.com/user-attachments/assets/de9fe3f4-f470-44d9-9b21-1062ba63f634" />
+
+마이크로 프로세서(AVR)---증폭기(모터 드라이버, L298)---시스템(모터)
+
 Duty ↑ → 모터에 전달되는 평균적인 에너지 ↑ → 속도 ↑
 
 
@@ -78,10 +109,12 @@ Duty ↓ → 전달되는 에너지 ↓ → 속도 ↓
 
 
 **Period(주기)**
-→ 신호가 한 번 반복되는 데 걸리는 시간
+
+⇒ 신호가 한 번 반복되는 데 걸리는 시간
 
 **Frequency(주파수)**
-→ 신호의 주기가 1초에 몇 번 반복되는지를 나타내는 값
+
+⇒ 신호의 주기가 1초에 몇 번 반복되는지를 나타내는 값
 
 
 
@@ -107,6 +140,13 @@ $$
 
 
 
+## 분주비(Prescaler)
 
+**타이머에 들어가는 클럭의 속도를 나눠주는 비율**
 
+**• 분주비를 사용하는 이유**
+
+  타이머에 들어가는 클럭 주파수를 의도적으로 낮추기 위해
+  
+  ⇒ 타이머에 공급되는 클럭을 나누어 타이머의 동작 주파수를 낮춘다
 
