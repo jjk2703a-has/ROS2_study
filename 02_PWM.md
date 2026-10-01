@@ -25,7 +25,7 @@ Width : 폭
 
 Modulation : 변조
 
-사각파의 폭을 제어한다는 의미
+펄스 폭을 제어한다는 의미
 
 <img width="434" height="109" alt="image" src="https://github.com/user-attachments/assets/193393b6-379d-4f62-ae54-a6d3be656029" />
 
